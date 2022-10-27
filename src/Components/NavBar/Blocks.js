@@ -32,7 +32,7 @@ function Blocks() {
       <Repeat setRowAndCol={setRowAndCol}>
         {(index) => <div onClick={() => animateBlock(index)} className="block" key={index}></div>}
       </Repeat>
-      <h1 className={!toggled ? 'toggled title' : 'title'}>Roman's Profile</h1>
+      {/* <h1 className={!toggled ? 'toggled title' : 'title'}>Roman's Profile</h1> */}
     </div>
   );
 }
