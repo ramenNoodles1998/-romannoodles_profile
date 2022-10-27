@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+:root {
+  --g1: rgb(104, 45, 55);
+  --g2: rgb(20, 20, 20);
+}
+
+.block {
+  display: inline-block;
+  min-height: 100px;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: rgb(23, 23, 23);
+  border-radius: .2rem;
+  margin: 0.2rem;
+}
+
+.block:hover {
+    margin: .1rem;
+}
+
+.title {
+  left: 50%;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Bungee Shade", cursive;
+  font-size: 6vw;
+  margin: 0px;
+  pointer-events: none;
+  width: 50vw;
+  opacity: 75%;
+  z-index: 3;
+}
+
+.toggled {
+    opacity: 0% !important;
+}
+
+.nav-bar {
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(to right, var(--g2), var(--g1), var(--g2));
+  background-size: 200%;
+}
