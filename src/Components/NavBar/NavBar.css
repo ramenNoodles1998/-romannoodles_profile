@@ -10,7 +10,7 @@
 }
 
 :root {
-  --g1: rgb(214, 108, 126);
+  --g1: rgb(6, 150, 160);
   --g2: rgb(20, 20, 20);
 }
 
@@ -20,6 +20,7 @@
   cursor: pointer;
   min-width: 100px;
   background-color: var(--g1); 
+  opacity: 50%;
   border-radius: .2rem;
   margin: 0.2rem;
 }
@@ -29,17 +30,14 @@
 }
 
 .title {
-  left: 50%;
+  left: 0%;
   position: absolute;
-  top: 15%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Bungee Shade", cursive;
-  font-size: 6vw;
+  top: 20%;
+  color: rgb(216, 213, 213);
+  font-size: 3vw;
   margin: 0px;
   pointer-events: none;
-  width: 50vw;
-  opacity: 75%;
+  width: 25vw;
   z-index: 3;
 }
 
@@ -51,4 +49,5 @@
   animation: background-pan 10s linear infinite;
   background: linear-gradient(to right, var(--g2), var(--g1), var(--g2));
   background-size: 200%;
+  border-bottom:rgb(242, 245, 245) solid .25rem;
 }

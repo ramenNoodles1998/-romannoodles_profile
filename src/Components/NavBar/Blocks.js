@@ -1,7 +1,7 @@
 import anime from 'animejs/lib/anime.es.js';
 import Repeat from './Repeat';
 import './NavBar.css'
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 
 function Blocks() {
   let columns = 0;
@@ -34,7 +34,7 @@ function Blocks() {
       <Repeat setRowAndCol={setRowAndCol}>
         {(index) => <div onClick={() => animateBlock(index)} className="block" key={index}></div>}
       </Repeat>
-      {/* <h1 className={!toggled ? 'toggled title' : 'title'}>Roman's Profile</h1> */}
+      <h1 className="title font-mono ml-3 pl-3">Roman Noodles</h1>
     </div>
   );
 }
