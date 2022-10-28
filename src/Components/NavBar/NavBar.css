@@ -10,7 +10,7 @@
 }
 
 :root {
-  --g1: rgb(104, 45, 55);
+  --g1: rgb(214, 108, 126);
   --g2: rgb(20, 20, 20);
 }
 
@@ -19,7 +19,7 @@
   min-height: 100px;
   cursor: pointer;
   min-width: 100px;
-  background-color: rgb(23, 23, 23);
+  background-color: var(--g1); 
   border-radius: .2rem;
   margin: 0.2rem;
 }

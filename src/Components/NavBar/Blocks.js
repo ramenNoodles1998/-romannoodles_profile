@@ -9,7 +9,9 @@ function Blocks() {
   const [toggled, setToggled] = useState(0);
 
   const animateBlock = (index) => {
-    setToggled(!toggled);
+    if(toggled) {
+      setToggled(!toggled);
+    }
 
     anime({
       targets: '.block',
